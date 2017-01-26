@@ -1,0 +1,8 @@
+# Access to the data in this file is provided through the EnvConfig class - see 
+
+defaults: &execution_defaults
+  default_config: staging #This just ensures the staging profile (below) is loaded if no CONFIG= is passed from the command line.
+
+staging:
+  <<: *execution_defaults
+  base_url: http://www.ppluk.com
